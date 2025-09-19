@@ -1,0 +1,23 @@
+{
+    "user":[
+            {
+             "name":"vishal",
+             "age":19,
+             "email":"vish@test"
+
+            },
+            {
+             "name":"kushal",
+             "age":29,
+             "email":"kush@test"
+
+            },
+            {
+             "name":"shalini",
+             "age":24,
+             "email":"sh@test"
+
+            }
+        ]
+    
+}

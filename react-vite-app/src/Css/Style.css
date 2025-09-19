@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.head{
+    color: aqua;
+    text-align: center;
+    background-color: rebeccapurple;
+    width:500px;
+    height: 300px;
+    font-size: 2rem;
+    font-weight:900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

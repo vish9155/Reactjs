@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.containner{
+    background:coral;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.todo{
+    width:70%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 1px gray;
+
+}
+.tittle{
+    color: black;
+    font-size: 20px;
+    padding: 20px;
+}
+.tittle img{
+    height: 25px;
+    width: 120px;
+    margin-left: 10px;
+}
+.inputbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width:80%;
+    background-color: gray;
+    border-radius: 25px;
+    
+   
+}
+
+.inputbtn input{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    height: 40px;
+    flex: 1;
+    margin-left: 10px;
+   
+}
+.inputbtn input::placeholder
+{
+    color: black;
+    font-weight: lighter;
+    font-size: 11px;
+}
+.inputbtn button{
+    border: 0;
+    outline: 0;
+    width: 20%;
+    background-color: coral;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 15px;
+   box-shadow: 0 0 1px coral;
+}
+
+ul li{
+    list-style: none;
+    margin:4px 0 0 80px;
+    position: relative;
+    padding: 12px 18px 20px 80px;
+    cursor: pointer;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    background: url("../public/ci.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding-left: 40px;
+  cursor: pointer;
+}
+
+ul li.checked::before{
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    background: url("../public/R.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+ul li.checked .textline{
+    text-decoration: line-through;
+}
+
+ul li button{
+    position: absolute;
+    right: 10px;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    top: 0;
+    background: white;
+    cursor: pointer;
+}
+ul li button:hover{
+    color: red;
+}
+
+
