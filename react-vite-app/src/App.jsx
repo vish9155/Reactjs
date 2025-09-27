@@ -1,6 +1,8 @@
 //react-> a react is a liabrary of js that develope by facebook it is using to build a fronted page;
 //      it make a single page application(spa) its fast to works and relode browser
 
+import USEapi from "../USEApi"
+
 
 // import { useActionState, useState } from "react"
 // import useToggle from "./useToggle"
@@ -1705,3 +1707,13 @@
 
 // export default App
 
+function App()
+
+{
+    return(
+        <>
+         <USEapi />
+        </>
+    )
+}
+export default App

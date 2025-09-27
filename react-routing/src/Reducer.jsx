@@ -16,7 +16,7 @@ let emptydata = {
 export default function HandleReducer() {
     let [state, dispatch] = useReducer(getdata, emptydata)
   
-  
+  console.log(state)
     console.log(state)
     return (
         <>

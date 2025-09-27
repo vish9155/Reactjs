@@ -3,8 +3,8 @@
 
 // import Simplevalidation from "./SimpleValidatino"
 import Lazy from "./LazyandPerformence"
-import HandleReducer from "./Reducer"
-import HandleForm from "./ValidationUsingActionState"
+// import HandleReducer from "./Reducer"
+// import HandleForm from "./ValidationUsingActionState"
 
 // //  client-side-routing->the browser are not referesh go to the new route ;
 

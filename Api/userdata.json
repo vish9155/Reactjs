@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "name": "nehal wadera",
+      "age": "29",
+      "email": "nehal@gmail.com",
+      "id": "f448"
+    },
+    {
+      "name": "kushal kumar",
+      "age": 22,
+      "email": "test3@gmail",
+      "id": "099d"
+    },
+    {
+      "name": "manish kumar",
+      "age": 23,
+      "email": "test5@gmail",
+      "id": "d6e5"
+    },
+    {
+      "name": "rakesh kumar",
+      "age": 29,
+      "email": "test6@gmail",
+      "id": "8300"
+    },
+    {
+      "name": "Ajay kumar",
+      "age": 26,
+      "email": "test4@gmail",
+      "id": "bc96"
+    },
+    {
+      "id": "6347",
+      "name": "vishal yadav",
+      "email": "Test@gmail.com",
+      "age": "20"
+    },
+    {
+      "id": "ad02",
+      "name": "vivek oberoi",
+      "email": "Test@gmail.com",
+      "age": "20"
+    }
+  ]
+}

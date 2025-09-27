@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "name": "kushal kumar ",
+      "age": 20,
+      "course": "Bca",
+      "id": "acd9"
+    },
+    {
+      "name": "Ashutosh",
+      "age": "29",
+      "course": "Bca",
+      "id": "334c"
+    },
+    {
+      "name": "Adarsh kumar ",
+      "age": 23,
+      "course": "Bca",
+      "id": "027c"
+    },
+    {
+      "name": "Manish Kumar",
+      "age": "24",
+      "course": "Bca",
+      "id": "4f3f"
+    }
+  ]
+}

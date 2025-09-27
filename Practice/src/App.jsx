@@ -1,5 +1,7 @@
 // import Frt, { Ani, V } from "./K_V";
 
+import { useEffect, useState } from "react"
+
 
 // function App()
 // {
@@ -621,7 +623,7 @@
 //         email:"vishal@test",
 //         work:[
 //            { 
-            
+
 //             game:"cricket"
 
 //            },
@@ -636,15 +638,82 @@
 //             a.map((data)=>{
 //                 return(
 //                     <div key={data.email}>
-                
+
 //                          <Info person1={data} />
 //                     </div>
 //                 )
 //             })
 //         }
-   
+
 //       </div>
 //     )
 // }
 
 // export default App
+
+import "./style.css"
+
+function App() {
+    let [value, setvalue] = useState('');
+    let [todo, settodo] = useState(() => {
+        let saved = localStorage.getItem("todo")
+        return saved ? JSON.parse(saved) : [];
+    })
+
+    useEffect(() => {
+        localStorage.setItem("todo", JSON.stringify(todo))
+    }, [todo])
+
+    function addtodo() {
+
+
+        if (value == '') {
+            alert("please enter somethings......")
+        }
+        else {
+            settodo([...todo, { text: value, done: false }])
+        }
+
+        value = ' '
+    }
+    function deletetodo(index) {
+        let newtodo = todo.filter((_,i) => i != index)
+        settodo(newtodo)
+    }
+    function toggle(index) {
+        let newtodo = [...todo]
+
+        newtodo[index].done = !newtodo[index].done
+        settodo(newtodo)
+    }
+
+    return (
+        <>
+            <div className="containner">
+                <div className="todoapp">
+                    <h2 className="tittle">Todo-List </h2>
+                    <div className="inputbtn">
+                        <input type="text" onChange={(event) => { setvalue(event.target.value) }} placeholder="Enter somethongs....." />
+                        <button className="btn" onClick={addtodo}>Add</button>
+                    </div>
+                    <ul>
+                        {
+                            todo.map((item, index) => {
+                                return (
+
+
+                                    <li key={index} className={item.done?'checked':""} onClick={()=>{toggle(index)}} >{item.text}
+
+                                        <button onClick={(e) => { e.stopPropagation(), deletetodo(index) }}>Delete</button>
+
+                                    </li>)
+                            })
+                        }
+                    </ul>
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default App
