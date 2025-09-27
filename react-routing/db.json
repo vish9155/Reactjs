@@ -1,23 +1,34 @@
 {
-    "user":[
-            {
-             "name":"vishal",
-             "age":19,
-             "email":"vish@test"
-
-            },
-            {
-             "name":"kushal",
-             "age":29,
-             "email":"kush@test"
-
-            },
-            {
-             "name":"shalini",
-             "age":24,
-             "email":"sh@test"
-
-            }
-        ]
-    
+  "user": [
+    {
+      "name": "devendatr",
+      "email": "vish@test",
+      "age": "19",
+      "id": "b41c"
+    },
+    {
+      "name": "kushal",
+      "age": 29,
+      "email": "kush@test",
+      "id": "c101"
+    },
+    {
+      "name": "shalini",
+      "age": 24,
+      "email": "sh@test",
+      "id": "fba4"
+    },
+    {
+      "name": "puja",
+      "age": 24,
+      "email": "sh@test",
+      "id": "50df"
+    },
+    {
+      "id": "6505",
+      "name": "vishal",
+      "email": "vishal@test",
+      "age": "24"
+    }
+  ]
 }

@@ -39,7 +39,11 @@ text-decoration: none;
 
 }
 ul li .link:hover{
-    color: green;
+  
     cursor: pointer;
   
+}
+.active{
+    color: green;
+    font-weight: 900;
 }

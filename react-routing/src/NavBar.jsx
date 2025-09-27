@@ -1,18 +1,22 @@
-import {Link} from "react-router"
+import {NavLink, Outlet} from "react-router"
 import  "./NavBAr.css"
 function NavBar() {
     return (
-        <>
+        <><div>
             <div className="main">
-                <div className="logo"><Link className="link" to={"/"}> <h2>LOGO</h2></Link></div>
+                <div className="logo"><NavLink className="link" to={"/"}> <h2>LOGO</h2></NavLink></div>
                 <div className="navdata">
                     <ul>
-                        <li><Link className="link" to="/">Home</Link></li>
-                        <li><Link className="link" to="/about">About</Link></li>
-                        <li><Link className="link" to="/login">Login</Link></li>
-                        <li><Link className="link" to="/college">College</Link></li>
+                        <li><NavLink className="link" to="/">Home</NavLink></li>
+                        <li><NavLink className="link" to="/in/user/about">About</NavLink></li>
+                        <li><NavLink className="link" to="/in/user/login">Login</NavLink></li>
+                        <li><NavLink className="link" to="/college">College</NavLink></li>
+                        <li><NavLink className={"link"} to={"/user/"}>User</NavLink></li>
+                        <li><NavLink className={"link"} to={"/user/list"}>List</NavLink></li>  
                     </ul>
                 </div>
+            </div>
+            <Outlet />
             </div>
         </>
     )
