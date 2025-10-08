@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "name": "rajesh",
+      "age": "18",
+      "course": "Bca",
+      "id": "9570"
+    },
+    {
+      "name": "Ravi",
+      "age": "28",
+      "course": "Bca",
+      "id": "80d8"
+    },
+    {
+      "name": "amit",
+      "age": "39",
+      "course": "Bca",
+      "id": "4410"
+    },
+    {
+      "name": "vishal",
+      "age": "21",
+      "course": "Bca",
+      "id": "77bb"
+    },
+    {
+      "name": "vivek",
+      "age": "29",
+      "course": "Bca",
+      "id": "ff3c"
+    }
+  ]
+}
